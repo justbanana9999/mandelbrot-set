@@ -110,6 +110,10 @@ while True:
         print('Time passed:',f'{hours}:{minutes}:{seconds}')
         pixelSize = org
         updateScreen();computeDraw()
+
+    if key[pygame.K_ESCAPE]:
+        pygame.quit()
+        exit()
     
     pygame.display.update()
     clock.tick(60)
